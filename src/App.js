@@ -1,15 +1,17 @@
 // import ButtonPage from './pages/ButtonPage'
 // import AccordionPage from './pages/AccordionPage'
-// import Dropdown from './components/Dropdown'
+import SideBar from './components/SideBar'
+import DropdownPage from './pages/DropdownPage'
 
 function App() {
   return (
-    <div>
+    <div className='flex'>
+      <SideBar />
       {/* 
       <ButtonPage />
       <AccordionPage />
-      <Dropdown />
-       */}
+    */}
+      <DropdownPage />
     </div>
   )
 }
