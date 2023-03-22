@@ -1,17 +1,25 @@
-// import ButtonPage from './pages/ButtonPage'
-// import AccordionPage from './pages/AccordionPage'
+import Route from './components/Route'
 import SideBar from './components/SideBar'
+import AccordionPage from './pages/AccordionPage'
 import DropdownPage from './pages/DropdownPage'
+import ButtonPage from './pages/ButtonPage'
 
 function App() {
   return (
-    <div className='flex'>
+    <div>
       <SideBar />
-      {/* 
-      <ButtonPage />
-      <AccordionPage />
-    */}
-      <DropdownPage />
+
+      <div>
+        <Route path='/accordion'>
+          <AccordionPage />
+        </Route>
+        <Route path='/button'>
+          <ButtonPage />
+        </Route>
+        <Route path='/'>
+          <DropdownPage />
+        </Route>
+      </div>
     </div>
   )
 }
