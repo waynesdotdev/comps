@@ -11,6 +11,10 @@ const SideBar = () => {
       path: '/accordion',
     },
     {
+      label: 'Modal',
+      path: '/modal',
+    },
+    {
       label: 'Button',
       path: '/button',
     },
